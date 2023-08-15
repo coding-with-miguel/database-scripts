@@ -1,4 +1,4 @@
-## Snowflake Scripts and Queries
+## Postgres Scripts and Queries
 
 ### Administrative Queries
 
