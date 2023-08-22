@@ -1,5 +1,15 @@
 ## Postgres Scripts and Queries
 
+## Index
+
+* [Administrative Queries](#administrative-queries)
+* [Importing / Exporting Data](#importing-exporting-data)
+* [Handling Duplicate Rows](#handling-duplicate-rows)
+* [Table Management](#table-management)
+* [Advanced Joining](#advanced-joining)
+* [Triggers](#triggers)
+
+
 ### Administrative Queries
 
 #### Show running queries
@@ -128,6 +138,8 @@ ORDER BY relpages DESC
 LIMIT 1;
 ```
 
+**[⬆ Back to Index](#index)**
+
 
 ### Importing / Exporting Data
 
@@ -140,6 +152,8 @@ $ pg_dump -U username -h hostname databasename > dump.sql
 ```commandline
 $ psql -d newdb -f dump.sql
 ```
+
+**[⬆ Back to Index](#index)**
 
 
 ### Handling Duplicate Rows
@@ -168,6 +182,8 @@ WHERE student_id IN (
     ) t
 WHERE t.row_num > 1);
 ```
+
+**[⬆ Back to Index](#index)**
 
 
 ### Table Management
@@ -202,6 +218,8 @@ INTO tbl_top_students
 FROM tbl_scores
 WHERE score > AVG(score);
 ```
+
+**[⬆ Back to Index](#index)**
 
 
 ### Advanced Joining
@@ -273,6 +291,8 @@ FROM tbl_departments
 ORDER BY tbl_departments.full_name ASC;
 ```
 
+**[⬆ Back to Index](#index)**
+
 
 ### Triggers
 
@@ -291,3 +311,5 @@ END;
 $$
 LANGUAGE 'plpgsql';
 ```
+
+**[⬆ Back to Index](#index)**

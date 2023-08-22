@@ -12,9 +12,9 @@ Please read [CONTRIBUTING](CONTRIBUTING.md). If you are new to GitHub, [welcome]
 
 This project lists valuable database scripts and utilities.
 
-### Postgres
-
-[Postgres Queries](../postgres/postgres_scripts.md)
++ [Snowflake Queries](../snowflake/snowflake_scripts.md)
++ [Postgres Queries](../postgres/postgres_scripts.md)
++ [MySQL Queries](../mysql/mysql_scripts.md)
 
 ### Misc.
 
